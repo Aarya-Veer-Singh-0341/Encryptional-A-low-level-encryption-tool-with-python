@@ -25,12 +25,12 @@ def decimal(binary_list):
 
 
 
-Data = int(input("Enter a number: "))
+Data = int(input("Enter a Data: "))
 binary_Data = binary(Data)
 
-Pwd = int(input("Enter a number: ")) 
+Pwd = int(input("Enter a Password: ")) 
 binary_Pwd = binary(Pwd)
-
+print("\nProccessing...")
 
 #equalising binary digits
 if len(binary_Data) > len(binary_Pwd):
@@ -96,3 +96,5 @@ else:
 # raisec ValueError("Password is incorrect")
 # print"Password is correct")
 # decimal(new_data)
+
+print(f"\n{binary_Data},\n{(Enc)}")
