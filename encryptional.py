@@ -93,6 +93,6 @@ if new_data == binary_Data:
     print("Password is correct")
 else:
     print("Password is incorrect")
-    # raise ValueError("Password is incorrect")
-# print("Password is correct")
+# raisec ValueError("Password is incorrect")
+# print"Password is correct")
 # decimal(new_data)
