@@ -24,11 +24,12 @@ def decimal(binary_list):
     decimal_value = sum(binary_decimal)
 
 
-
-Data = int(input("Enter a Data: "))
+Enc = []
+print("\nData Entry")
+Data = int(input("Enter Data you want to encrpyt: "))
 binary_Data = binary(Data)
 
-Pwd = int(input("Enter a Password: ")) 
+Pwd = int(input("Enter Password for encryption: ")) 
 binary_Pwd = binary(Pwd)
 print("\nProccessing...")
 
@@ -47,7 +48,7 @@ elif len(binary_Pwd) > len(binary_Data):
         binary_Pwd.append(int(0))
     binary_Data.reverse()
 
-Enc = []
+
 
 for i in range(len(binary_Data)):
     if binary_Data[i] == 1 and binary_Pwd[i] == 1:
@@ -89,12 +90,11 @@ for i in range(len(Enc)):
         new_data.append(int(0))
     elif Enc[i] == 0 and binary_enter_pwd[i] == 1:
         new_data.append(int(1))
+
+#Output
 if new_data == binary_Data:
     print("Password is correct")
 else:
     print("Password is incorrect")
-# raisec ValueError("Password is incorrect")
-# print"Password is correct")
-# decimal(new_data)
 
-print(f"\n{binary_Data},\n{(Enc)}")
+print(f"\n{binary_Data}:Data given,\n{(Enc)}:Encrypted data")
